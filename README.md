@@ -1,5 +1,4 @@
-### Redis
-
+## Redis
 **NoSQL In-Memory Database (SUPER FAST):**
 
  - Open source database often used for really high performance scalable applications
@@ -43,13 +42,13 @@
 - Possible to add, remove, test for existing members in a group
 - Similar to lists but sets does not allow repeated values or members (only allows single copies of elements)
 
-SETS:
+**SETS:**
 - ``SADD ourset 1 2 3 4 5`` adds elements to set
 - ``SMEMBERS ourset`` returns elements from set
 - ``SADD ourset 1 2 3 4`` will state '0' since none of the information has been added due to already having same copy
 - ``SISMEMBER ourset 5`` checks 'ourset' to see if '5' exists and will return '1' (true in this case)
 
-SORTED SETS:
+**SORTED SETS:**
 - Every member of a Sorted Set is associated with a score which allows it to be ordered from smallest to greatest.
 - ``ZADD team 50 "Wizards"``
 - ``ZADD team 40 "Cavs"``
@@ -58,8 +57,7 @@ SORTED SETS:
 - ``ZRANGE team 0 2`` will return "Lakers", "Cavs", "Wizards"
 - ``ZRANK team "Wizards"`` will return 2 based on order placed by score (Current Range: 0,1,2)
 
-
- USEFUL LINKS:
+ **Useful Links:**
 
   - https://redis.io/download (Installing Redis)
   - https://redis.io/commands (List of Redis Commands)
